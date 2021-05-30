@@ -4,7 +4,7 @@ import numpy as np
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input,decode_predictions
 from PIL import Image
 import cv2
-
+ 
 @st.cache()
 def load_model():
   model = MobileNetV2()
