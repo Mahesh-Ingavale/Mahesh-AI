@@ -5,7 +5,7 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input,decode_p
 from PIL import Image
 import cv2
   
-@st.cache()
+@st.cache() 
 def load_model():
   model = MobileNetV2()
   return model
