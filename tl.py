@@ -1,11 +1,11 @@
 import streamlit as st
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2
-import numpy as np 
+import numpy as np
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input,decode_predictions
 from PIL import Image
 import cv2
-  
-@st.cache() 
+
+@st.cache()
 def load_model():
   model = MobileNetV2()
   return model
@@ -30,4 +30,3 @@ if upload is not None:
     for i in range(3):
       out = label[0][i]
       st.sidebar.title('%s (%.2f%%)' % (out[1], out[2]*100))
-   
