@@ -7,3 +7,4 @@ Use !pipreqs /content for getting requirements.txt
 Change Tensorflow to tensorflow-cpu ( If you get Slug Size Error)
 Change opencv-python to opencv-contrib-python-headless
 Add h5py<3.0.0
+ 
